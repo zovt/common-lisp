@@ -21,3 +21,9 @@
    (or (parse-integer (prompt-read "Rating") :junk-allowed t) 0)
    (y-or-n-p "Ripped [y/n]: ")))
 
+(defun add-cds ()
+  (loop (add-record (prompt-cd))
+	(if (not (y-or-n-p "Another? [y/n]: ")) (return))))
+
+
+
