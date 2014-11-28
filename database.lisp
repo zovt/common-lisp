@@ -23,7 +23,7 @@
 
 (defun add-cds ()
   (loop (add-record (prompt-cd))
-	(if (not (y-or-n-p "Another? [y/n]: ")) (return))))
+     (if (not (y-or-n-p "Another? [y/n]: ")) (return))))
 
 
 
